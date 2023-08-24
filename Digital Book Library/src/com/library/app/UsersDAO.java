@@ -116,4 +116,28 @@ public class UsersDAO {
         }
     }
 
+    public void printUserDetails(Users user) {
+        if (user != null) {
+            System.out.println("User ID: " + user.getUserID());
+            System.out.println("First Name: " + user.getFirstName());
+            System.out.println("Last Name: " + user.getLastName());
+            System.out.println("Email: " + user.getEmail());
+            System.out.println("Phone Number: " + user.getPhoneNumber());
+        } else {
+            System.out.println("User not found.");
+        }
+    }
+
+    public void printAllUsers(List<Users> usersList) {
+        if (!usersList.isEmpty()) {
+            System.out.println("All Users:");
+            for (Users user : usersList) {
+                printUserDetails(user);
+                System.out.println("--------------------");
+            }
+        } else {
+            System.out.println("No users found.");
+        }
+    }
+
 }
