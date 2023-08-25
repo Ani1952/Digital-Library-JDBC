@@ -1,4 +1,4 @@
-package com.library.app;
+package com.library.util;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
