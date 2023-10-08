@@ -13,5 +13,4 @@ public class App {
         booksDOA.printAllBooks(null);
         dbcon.closeConnection();
     }
-
 }
